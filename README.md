@@ -26,4 +26,4 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 
 ## License
 
-The code is available under the [GPLv2 license](LICENSE.txt).
+The code is available under the [GPLv2 license]https://github.com/miklb/permission/blob/master/LICENSE).

@@ -3,7 +3,7 @@ WordPress theme with IndieWeb support baked in. You have permission to free your
 
 Permission aims to be a WordPress theme built to get you up and running quickly with the IndieWeb, while having ability to easily personalize.
 
-Specifically, support out-of-the-box the primary IndieWeb WordPress plugins:
+Specifically, support out-of-the-box for the primary IndieWeb WordPress plugins:
 
 * [webmentions](https://github.com/pfefferle/wordpress-webmention)
 * [micropub](https://wordpress.org/plugins/micropub/)
@@ -22,8 +22,8 @@ Will you support *Y*? Maybe. As long as it furthers the goal of having an easy t
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request]
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and open a pull request.
 
 ## License
 
-The code is available under the GPLv2 license](LICENSE.txt).
+The code is available under the [GPLv2 license](LICENSE.txt).

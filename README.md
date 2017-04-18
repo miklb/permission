@@ -1,7 +1,7 @@
 # permission
 WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.
 
-Permission aims to be a  WordPress theme built to get you up and running with the IndieWeb, while having ability to easily personalize.
+Permission aims to be a WordPress theme built to get you up and running quickly with the IndieWeb, while having ability to easily personalize.
 
 Specifically, support out-of-the-box the primary IndieWeb WordPress plugins:
 

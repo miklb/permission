@@ -1,0 +1,37 @@
+{
+  "exclude": [
+    "^(node_modules|bower_components|\\.imdone|target|build|dist|logs)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
+  ],
+  "watcher": true,
+  "keepEmptyPriority": true,
+  "code": {
+    "include_lists": [
+      "TODO",
+      "DOING",
+      "DONE",
+      "PLANNING",
+      "FIXME",
+      "ARCHIVE",
+      "HACK",
+      "CHANGED",
+      "XXX",
+      "IDEA",
+      "NOTE",
+      "REVIEW"
+    ]
+  },
+  "lists": [],
+  "marked": {
+    "gfm": true,
+    "tables": true,
+    "breaks": false,
+    "pedantic": false,
+    "smartLists": true,
+    "langPrefix": "language-"
+  },
+  "sync": {
+    "id": "5903f3f088b5b22687a1fa8d",
+    "name": "permission",
+    "useImdoneioForPriority": true
+  }
+}

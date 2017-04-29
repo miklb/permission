@@ -14,9 +14,9 @@ function permission_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Main right sidebar',
 		'id'            => 'main_right_1',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="box">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
+		'before_title'  => '<h2 class="subtitle">',
 		'after_title'   => '</h2>',
 	) );
 

@@ -10,6 +10,7 @@ Specifically, support out-of-the-box for the primary IndieWeb WordPress plugins:
 * [semantic-linkbacks](https://wordpress.org/plugins/semantic-linkbacks/)
 * [post-kinds](https://wordpress.org/plugins/indieweb-post-kinds/)
 * [syndication links](https://wordpress.org/plugins/syndication-links/)
+* webmention-comments
 
 ## FAQ
 Why not *X* css framework? In a nutshell, I’ve looked at a **ton** of frameworks, and if I had the time and inclination, [Bulma](http://bulma.io) might be something I’d write. It allows for focus on the functionality of the theme and not writing all of the CSS from scratch, yet room for an original feel.

@@ -936,6 +936,7 @@ a.panel-block:hover,label.panel-block:hover{background-color:whitesmoke}
 .hero.is-fullheight .hero-body>.container{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1}
 .section{background-color:white;padding:3rem 1.5rem}
 .footer{background-color:whitesmoke;padding:3rem 1.5rem 6rem}
+.entry-header h2{font-weight:200}
 @media screen and (min-width:769px) and (max-width:999px){.is-block-tablet-only{display:block !important}
 .is-flex-tablet-only{display:-webkit-box !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important}
 .is-inline-tablet-only{display:inline !important}

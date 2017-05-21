@@ -36,3 +36,8 @@ function permission_widgets_init() {
 }
 
 	add_action( 'wp_enqueue_scripts', 'permission_scripts' );
+
+/**
+ * Load Custom Comment Walker Class
+ */
+require get_template_directory() . '/inc/permission-comment-walker.php';

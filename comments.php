@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package independence
+ * @package permission
  */
 
 if ( !empty ( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) )
@@ -110,7 +110,7 @@ if ( $comments ) {
 					'per_page' => 10,
 					'style' => 'div',
 					'reverse_top_level' => true,
-					'walker' => new independence_walker_comment,
+					'walker' => new permission_walker_comment,
 				), $comments)
 		?>
 	</div>

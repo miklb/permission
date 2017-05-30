@@ -37,6 +37,26 @@ function permission_widgets_init() {
 
 	add_action( 'wp_enqueue_scripts', 'permission_scripts' );
 
+	$header = array(
+		'flex-width'    => true,
+		'width'         => 1920,
+		'flex-height'    => true,
+		'height'        => 400,
+		'default-image' => get_template_directory_uri() . '/assets/img/header.jpg',
+	);
+	add_theme_support( 'custom-header', $header );
+
+
+	/**
+	 * Add our Customizer content
+	 */
+	function permission_customize_register( $wp_customize ) {
+	   // Add all your Customizer content (i.e. Panels, Sections, Settings & Controls) here...
+	}
+
+	add_action( 'customize_register', 'permission_customize_register' );
+
+
 /**
  * Load Custom Comment Walker Class
  */

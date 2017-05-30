@@ -17,12 +17,45 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header class="hero is-primary is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title"><?php bloginfo('name'); ?></h1>
-        <h2 class="subtitle"><?php bloginfo('description'); ?></h2>
-      </div>
-    </div>
-  </header>
-  
+	<section class="hero is-primary is-medium">
+	<!-- Hero header: will stick at the top -->
+	<div class="hero-head">
+		<header class="nav">
+			<div class="container">
+				<div class="nav-left">
+					<a class="nav-item">
+						<?php bloginfo( 'title' ); ?>
+					</a>
+				</div>
+				<span class="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<div class="nav-right nav-menu">
+					<a class="nav-item is-active">
+						Home
+					</a>
+					<a class="nav-item">
+						Examples
+					</a>
+					<a class="nav-item">
+						Documentation
+					</a>
+					<span class="nav-item">
+						<a class="button is-primary is-inverted">
+							<span class="icon">
+								<i class="fa fa-github"></i>
+							</span>
+							<span>Download</span>
+						</a>
+					</span>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<!-- Hero content: will be in the middle -->
+			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+
+</section>

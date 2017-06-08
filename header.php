@@ -23,7 +23,7 @@
 		<header class="nav">
 			<div class="container">
 				<div class="nav-left">
-					<a class="nav-item">
+					<a class="nav-item title is-2">
 						<?php bloginfo( 'title' ); ?>
 					</a>
 				</div>
@@ -32,25 +32,17 @@
 					<span></span>
 					<span></span>
 				</span>
-				<div class="nav-right nav-menu">
-					<a class="nav-item is-active">
-						Home
-					</a>
-					<a class="nav-item">
-						Examples
-					</a>
-					<a class="nav-item">
-						Documentation
-					</a>
-					<span class="nav-item">
-						<a class="button is-primary is-inverted">
-							<span class="icon">
-								<i class="fa fa-github"></i>
-							</span>
-							<span>Download</span>
-						</a>
-					</span>
-				</div>
+				<?php
+						$menu_params = array(
+							'theme_location' => 'header-menu',
+							'container' => 'div',
+							'items_wrap' => '%3$s',
+							'echo' => false,
+							'depth' => 0,
+							'container_class' => 'nav-right nav-menu',
+						);
+						echo strip_tags( wp_nav_menu( $menu_params ), '<a><div>' );
+				 	?>
 			</div>
 		</header>
 	</div>

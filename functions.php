@@ -29,10 +29,10 @@ function permission_widgets_init() {
 	function permission_scripts() {
 		wp_enqueue_style( 'permission-style', get_template_directory_uri() . '/style.min.css' );
 		if (
-	        is_singular()
-	        and get_option( 'thread_comments' )
-	    )
-	        wp_enqueue_script( 'comment-reply' );
+					is_singular()
+					and get_option( 'thread_comments' )
+			)
+					wp_enqueue_script( 'comment-reply' );
 }
 
 	add_action( 'wp_enqueue_scripts', 'permission_scripts' );
@@ -46,15 +46,30 @@ function permission_widgets_init() {
 	);
 	add_theme_support( 'custom-header', $header );
 
+	function register_permission_menus() {
+	register_nav_menus(
+		array(
+			'header-menu' => __( 'Header Menu' ),
+			'extra-menu' => __( 'Extra Menu' )
+		 )
+	 );
+ }
+ add_action( 'init', 'register_permission_menus' );
 
-	/**
-	 * Add our Customizer content
-	 */
-	function permission_customize_register( $wp_customize ) {
-	   // Add all your Customizer content (i.e. Panels, Sections, Settings & Controls) here...
+ add_filter('nav_menu_css_class' , 'permission_active_nav_class' , 10 , 2);
+
+function permission_active_nav_class ($classes, $item) {
+		if (in_array('current-menu-item', $classes) ){
+				$classes[] = 'is-active ';
+		}
+		return $classes;
+}
+
+	function permission_nav_link_class( $atts, $item, $args ) {
+		$atts['class'] = 'nav-item';
+		return $atts;
 	}
-
-	add_action( 'customize_register', 'permission_customize_register' );
+	add_filter( 'nav_menu_link_attributes', 'permission_nav_link_class', 10, 3 );
 
 
 /**

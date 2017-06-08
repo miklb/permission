@@ -1,4 +1,6 @@
 # permission
+** Work in Progress ** code was pushed to GitHub before ready, now developing in open.
+
 WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.
 
 Permission aims to be a WordPress theme built to get you up and running quickly with the IndieWeb, while having ability to easily personalize.

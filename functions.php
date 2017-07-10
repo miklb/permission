@@ -26,11 +26,11 @@ function permission_widgets_init() {
 	/**
 	 * Enqueue scripts.
 	 */
-	function permission_scripts() {
+function permission_scripts() {
 		wp_enqueue_style( 'permission-style', get_template_directory_uri() . '/style.min.css' );
 		if (
 					is_singular()
-					and get_option( 'thread_comments' )
+					&& get_option( 'thread_comments' )
 			)
 					wp_enqueue_script( 'comment-reply' );
 }
@@ -45,34 +45,51 @@ function permission_widgets_init() {
 		'default-image' => get_template_directory_uri() . '/assets/img/header.jpg',
 	);
 	add_theme_support( 'custom-header', $header );
-
+	/**
+	 * Register the top main nav
+	 * @method register_permission_menus
+	 */
 	function register_permission_menus() {
-	register_nav_menus(
-		array(
-			'header-menu' => __( 'Header Menu' ),
-			'extra-menu' => __( 'Extra Menu' )
-		 )
-	 );
- }
- add_action( 'init', 'register_permission_menus' );
+		register_nav_menus(
+			array(
+				'header-menu' => __( 'Header Menu' ),
+				'extra-menu' => __( 'Extra Menu' ),
+		 	)
+	 	);
+	}
+	add_action( 'init', 'register_permission_menus' );
 
- add_filter('nav_menu_css_class' , 'permission_active_nav_class' , 10 , 2);
-
-function permission_active_nav_class ($classes, $item) {
-		if (in_array('current-menu-item', $classes) ){
+/**
+ * [permission_active_nav_class description]
+ * @method permission_active_nav_class
+ * @param  $classes
+ * @param  $item
+ * @return $classes
+	*/
+	function permission_active_nav_class( $classes, $item ) {
+		if ( in_array('current-menu-item', $classes ) ) {
 				$classes[] = 'is-active ';
 		}
 		return $classes;
-}
+	}
 
+	add_filter( 'nav_menu_css_class' , 'permission_active_nav_class' , 10 , 2 );
+	/**
+	 * [permission_nav_link_class description]
+	 * @method permission_nav_link_class
+	 * @param  $atts [description]
+	 * @param  $item [description]
+	 * @param  $args [description]
+	 * @return $atts
+	 */
 	function permission_nav_link_class( $atts, $item, $args ) {
 		$atts['class'] = 'nav-item';
 		return $atts;
 	}
+
 	add_filter( 'nav_menu_link_attributes', 'permission_nav_link_class', 10, 3 );
 
-
-/**
+	/**
  * Load Custom Comment Walker Class
  */
-require get_template_directory() . '/inc/permission-comment-walker.php';
+	require get_template_directory() . '/inc/permission-comment-walker.php';

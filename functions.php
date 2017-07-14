@@ -93,3 +93,8 @@ function permission_scripts() {
  * Load Custom Comment Walker Class
  */
 	require get_template_directory() . '/inc/permission-comment-walker.php';
+
+	/**
+	 * Load template tag functions
+	 */
+	 require get_template_directory() . '/inc/template-tags.php';

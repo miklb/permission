@@ -1,4 +1,4 @@
-scss_files: './'
+scss_files: './assets/css'
 exclude: [
   './node_modules/**/*',
   './sassdoc/**/*',
@@ -7,168 +7,47 @@ exclude: [
 
 linters:
 
-  BangFormat:
-    enabled: true
-    space_before_bang: true
-    space_after_bang: false
+  linters:
 
   BorderZero:
     enabled: true
+    convention: zero
 
-  ColorKeyword:
-    enabled: false
-
-  ColorVariable:
-    enabled: false
-
-  Comment:
-    enabled: false
-
-  DebugStatement:
+  BemDepth:
     enabled: true
 
   DeclarationOrder:
-    enabled: true
-
-  DuplicateProperty:
     enabled: false
 
-  ElsePlacement:
+  ExtendDirective:
     enabled: true
-    style: same_line
-
-  EmptyLineBetweenBlocks:
-    enabled: true
-    ignore_single_line_blocks: false
-
-  EmptyRule:
-    enabled: true
-
-  FinalNewline:
-    enabled: true
-    present: true
-
-  HexLength:
-    enabled: true
-    style: short
-
-  HexNotation:
-    enabled: true
-    style: lowercase
-
-  HexValidation:
-    enabled: true
-
-  IdSelector:
-    enabled: true
-
-  ImportPath:
-    enabled: true
-    leading_underscore: false
-    filename_extension: false
-
-  Indentation:
-    enabled: true
-    character: space
-    width: 2
 
   LeadingZero:
-    enabled: true
-    style: include_zero
-
-  MergeableSelector:
     enabled: false
-    force_nesting: false
 
   NameFormat:
     enabled: true
-    convention: hyphenated_lowercase
-    allow_leading_underscore: true
 
-  NestingDepth:
+  PrivateNamingConvention:
     enabled: true
-    max_depth: 3
-
-  PlaceholderInExtend:
-    enabled: true
+    prefix: _
 
   PropertySortOrder:
     enabled: false
-    ignore_unspecified: false
-
-  PropertySpelling:
-    enabled: false
-    extra_properties: []
 
   QualifyingElement:
-    enabled: true
-    allow_element_with_attribute: true
-    allow_element_with_class: false
-    allow_element_with_id: false
-
-  SelectorDepth:
-    enabled: true
-    max_depth: 3
+    enabled: false
 
   SelectorFormat:
     enabled: true
     convention: hyphenated_BEM
-
-  Shorthand:
-    enabled: true
+    class_convention: ^(?!js-).*
+    class_convention_explanation: should not be written in the form js-*
 
   SingleLinePerProperty:
     enabled: true
     allow_single_line_rule_sets: false
 
-  SingleLinePerSelector:
-    enabled: false
-
-  SpaceAfterComma:
-    enabled: true
-
-  SpaceAfterPropertyColon:
-    enabled: true
-    style: one_space
-
-  SpaceAfterPropertyName:
-    enabled: true
-
-  SpaceBeforeBrace:
-    enabled: true
-    style: space
-    allow_single_line_padding: true
-
-  SpaceBetweenParens:
-    enabled: true
-    spaces: 0
-
   StringQuotes:
     enabled: true
-    style: single_quotes
-
-  TrailingSemicolon:
-    enabled: true
-
-  TrailingZero:
-    enabled: true
-
-  UnnecessaryMantissa:
-    enabled: true
-
-  UnnecessaryParentReference:
-    enabled: true
-
-  UrlFormat:
-    enabled: false
-
-  UrlQuotes:
-    enabled: true
-
-  VendorPrefixes:
-    enabled: true
-    identifier_list: base
-    excluded_identifiers: []
-
-  ZeroUnit:
-    enabled: true
+    style: double_quotes

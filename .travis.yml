@@ -25,11 +25,10 @@ matrix:
     include:
         # Current $required_php_version for WordPress: 5.2.4
         # aliased to 5.2.17
-        - php: '5.2'
-          dist: precise
+        - php: '5.3'
         # aliased to a recent 5.6.x version
         - php: '5.6'
-          env: SNIFF=1
+          env: PHPCS_BRANCH=2.9 SNIFF=1
         # aliased to a recent 7.0.x version
         - php: '7.0'
         # aliased to a recent 7.2.x version
@@ -52,12 +51,12 @@ before_script:
     - export PHPCS_DIR=/tmp/phpcs
     - export SNIFFS_DIR=/tmp/sniffs
     # Install CodeSniffer for WordPress Coding Standards checks.
-    - if [[ "$SNIFF" == "1" ]]; then git clone -b 3.1.1 --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR; fi
+    - if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git -b $PHPCS_BRANCH $PHPCS_DIR; fi
     # Install WordPress Coding Standards.
-    - if [[ "$SNIFF" == "1" ]]; then git clone -b 0.13.1 --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $SNIFFS_DIR; fi
+    - if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $SNIFFS_DIR; fi
     # Install PHP Compatibility sniffs.
     # @todo look at v8.0 of compatiblity
-    - if [[ "$SNIFF" == "1" ]]; then git clone -b 7.1.5 --depth 1 https://github.com/wimg/PHPCompatibility.git $SNIFFS_DIR/PHPCompatibility; fi
+    - if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/wimg/PHPCompatibility.git $SNIFFS_DIR/PHPCompatibility; fi
     # Set install path for PHPCS sniffs.
     # @link https://github.com/squizlabs/PHP_CodeSniffer/blob/4237c2fc98cc838730b76ee9cee316f99286a2a7/CodeSniffer.php#L1941
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs --config-set installed_paths $SNIFFS_DIR; fi

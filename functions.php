@@ -47,6 +47,7 @@ function permission_scripts() {
 	add_theme_support( 'custom-header', $header );
 	/**
 	 * Register the top main nav
+	 *
 	 * @method register_permission_menus
 	 */
 	function register_permission_menus() {
@@ -54,32 +55,35 @@ function permission_scripts() {
 			array(
 				'header-menu' => __( 'Header Menu' ),
 				'extra-menu' => __( 'Extra Menu' ),
-		 	)
-	 	);
+			)
+		);
 	}
 	add_action( 'init', 'register_permission_menus' );
 
-/**
- * [permission_active_nav_class description]
- * @method permission_active_nav_class
- * @param  $classes
- * @param  $item
- * @return $classes
-	*/
+	/**
+	 * Set active class for navigation.
+	 *
+	 * @method permission_active_nav_class
+	 * @param  string $classes navigation classes.
+	 * @param  string $item item.
+	 * @return string $classes classes.
+	 */
 	function permission_active_nav_class( $classes, $item ) {
-		if ( in_array('current-menu-item', $classes ) ) {
+		if ( in_array( 'current-menu-item', $classes ) ) {
 				$classes[] = 'is-active ';
 		}
 		return $classes;
 	}
 
 	add_filter( 'nav_menu_css_class' , 'permission_active_nav_class' , 10 , 2 );
+
 	/**
 	 * [permission_nav_link_class description]
+	 *
 	 * @method permission_nav_link_class
-	 * @param  $atts [description]
-	 * @param  $item [description]
-	 * @param  $args [description]
+	 * @param string $atts attributes.
+	 * @param string $item item.
+	 * @param string $args arguments.
 	 * @return $atts
 	 */
 	function permission_nav_link_class( $atts, $item, $args ) {

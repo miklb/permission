@@ -30,7 +30,7 @@
 // START Editing Project Variables.
 // Project related.
 var project                 = 'Permission'; // Project Name.
-var projectURL              = 'permission.dev'; // Project URL. Could be something like localhost:8888.
+var projectURL              = 'miklb.dev'; // Project URL. Could be something like localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Translation related.
@@ -90,7 +90,7 @@ const AUTOPREFIXER_BROWSERS = [
 /**
  * Load Plugins.
  *
- * Load gulp plugins and assing them semantic names.
+ * Load gulp plugins and passing them semantic names.
  */
 var gulp         = require('gulp'); // Gulp of-course
 
@@ -173,7 +173,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( sass( {
       errLogToConsole: true,
       outputStyle: 'compact',
-      //outputStyle: 'compressed',
+      // outputStyle: 'compressed',
       // outputStyle: 'nested',
       // outputStyle: 'expanded',
       precision: 10
@@ -299,13 +299,13 @@ gulp.task( 'browser-sync', function() {
          .pipe(sort())
          .pipe(wpPot( {
              domain        : text_domain,
-             destFile      : destFile,
+             destFile      : translationFile,
              package       : packageName,
              bugReport     : bugReport,
              lastTranslator: lastTranslator,
              team          : team
          } ))
-        .pipe(gulp.dest(translatePath))
+        .pipe(gulp.dest(translationDestination))
         .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
 
  });

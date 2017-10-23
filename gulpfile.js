@@ -236,7 +236,7 @@ gulp.task( 'browser-sync', function() {
   * Task: `customJS`.
   *
   * Concatenate and uglify custom JS scripts.
-  *
+  * @todo add eslinting to customJS
   * This task does the following:
   *     1. Gets the source folder for JS custom files
   *     2. Concatenates all the files and generates custom.js

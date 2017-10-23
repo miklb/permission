@@ -88,7 +88,7 @@ script:
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
     # 
-    - if [[ "$SNIFF" == "1" ]]; then ls -a -d "/temp/phpcs"; ls -a; fi
+    - if [[ "$SNIFF" == "1" ]]; then ls -a -d "$PHPCS_DIR"; ls -a; fi
 
 # Receive notifications for build results.
 # @link http://docs.travis-ci.com/user/notifications/#Email-notifications

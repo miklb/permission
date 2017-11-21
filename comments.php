@@ -45,7 +45,7 @@ if ( $comments ) {
 		?>
 		<li>
 			<?php $author_url = get_comment_meta( $comment->comment_ID, 'semantic_linkbacks_author_url', true ); ?>
-			<!-- TODO: get author name as alt for image -->
+			<!-- TODO: get author name as alt for image  id:0 gh:11-->
 			<a href="<?php echo $author_url ?>">
 			<?php $author_img = get_comment_meta( $comment->comment_ID, 'semantic_linkbacks_avatar', true ); ?>
 			<figure class="image is-64x64">

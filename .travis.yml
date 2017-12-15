@@ -63,7 +63,11 @@ before_script:
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs --config-set installed_paths $SNIFFS_DIR; fi
     # After CodeSniffer install you should refresh your path.
     - if [[ "$SNIFF" == "1" ]]; then phpenv rehash; fi
+<<<<<<< HEAD
     # Install Prettier
+=======
+    # Install Prettier 
+>>>>>>> tests
     # @link https://prettier.io
     # - if [[ "$SNIFF" == "1" ]]; then npm install -g prettier; fi
     # Install ESHint, a JavaScript Code Quality Tool.
@@ -87,7 +91,11 @@ script:
     # @link http://pear.php.net/package/PHP_CodeSniffer/
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
+<<<<<<< HEAD
     #
+=======
+    # 
+>>>>>>> tests
     - if [[ "$SNIFF" == "1" ]]; then php . $PHPCS_DIR/bin/phpcs . -p -s -v -n --standard=./phpcs.ruleset.xml --extensions=php; fi
 
 # Receive notifications for build results.

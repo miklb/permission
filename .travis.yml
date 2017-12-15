@@ -63,11 +63,8 @@ before_script:
     - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs --config-set installed_paths $SNIFFS_DIR; fi
     # After CodeSniffer install you should refresh your path.
     - if [[ "$SNIFF" == "1" ]]; then phpenv rehash; fi
-<<<<<<< HEAD
+
     # Install Prettier
-=======
-    # Install Prettier 
->>>>>>> tests
     # @link https://prettier.io
     # - if [[ "$SNIFF" == "1" ]]; then npm install -g prettier; fi
     # Install ESHint, a JavaScript Code Quality Tool.
@@ -82,23 +79,16 @@ before_script:
 script:
     # Search for PHP syntax errors.
     - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
-    # Run the theme through JSHint.
-    # - if [[ "$SNIFF" == "1" ]]; then jshint .; fi
-    # Run the theme through JavaScript Code Style checker.
-    # - if [[ "$SNIFF" == "1" ]]; then jscs . --preset=airbnb; fi
     # WordPress Coding Standards.
     # @link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
     # @link http://pear.php.net/package/PHP_CodeSniffer/
     # Uses a custom ruleset based on WordPress. This ruleset is automatically
     # picked up by PHPCS as it's named `phpcs.xml(.dist)`.
-<<<<<<< HEAD
-    #
-=======
-    # 
->>>>>>> tests
     - if [[ "$SNIFF" == "1" ]]; then php . $PHPCS_DIR/bin/phpcs . -p -s -v -n --standard=./phpcs.ruleset.xml --extensions=php; fi
 
 # Receive notifications for build results.
 # @link http://docs.travis-ci.com/user/notifications/#Email-notifications
 notifications:
     email: false
+    slack:
+     secure: mNmd88lhyT+Ag/VbjG3/gGw1K3S/EJIYQq6VoCKHfBgtzEil2hK5TDsH7ecrhp8s8vCOrJ1JXQe/UFzrlm2uIgIq+c1gV2p6QNSPF1OdcNV3fKKtlVj4XUIInVHkNR7ghOqdxkEx7CTomn0lEwAuR+GyGQtZnFMtFmEaNhkgZF6W6f41HGSFI0wcWoHly3LMBcNp0yK8WGyv/qbm/iysztQHZUVk3ejdH28nv3KLlZ5I6vNIBECdyJYmp7TkOvrKeBU03+484r4qvDbpKzoB1U7E4da3v/PcTXgVZk4Qr6Hn9DBh7nZ31ZJhizCl2scdXq3MCHUwe6edGweJ+bANOlgqZCu0MnibO2KSPL0UGWHFvl8EUCY1ij3G0jnuh4g71OOQZdn/9J/70KXqRBzt91VDWjB30nTJqDpp4hXeCW1cKj/E7GiT7x6IbI6DfcEkxb+IstUGJSLlIQJt8RgXflMRYWFz63WiX2BOTCf2Bxk8sW409Ay4my+NYVPmD0qcyxo23mMU3MIHk5EpMAw5kQvp6xBjJbncBjdd/MLEg/U3py/5MnerAZ5GfmpZ1z7RW5xvIUBuqR8aqXrGWwOML4Go4s9uuAdSriUK/ubqhSwfIPv2InMOul4SlaMxAaey5x8o0wXvIvewedqeFgTB5uUfaPHqRwe9dYs4DZAW8Wo=

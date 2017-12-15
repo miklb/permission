@@ -1,5 +1,4 @@
 # permission
-** Work in Progress ** code was pushed to GitHub before ready, now developing in open.
 
 WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.
 
@@ -15,8 +14,6 @@ Specifically, support out-of-the-box for the primary IndieWeb WordPress plugins:
 * webmention-comments
 
 ## FAQ
-Why not *X* css framework? In a nutshell, I’ve looked at a **ton** of frameworks, and if I had the time and inclination, [Bulma](http://bulma.io) might be something I’d write. It allows for focus on the functionality of the theme and not writing all of the CSS from scratch, yet room for an original feel.
-
 Will you support *Y*? Maybe. As long as it furthers the goal of having an easy to get up and running WordPress theme using IndieWeb principles.
 
 ## Installation

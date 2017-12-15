@@ -1,0 +1,63 @@
+repository:
+  # See https://developer.github.com/v3/repos/#edit for all available settings.
+
+  # The name of the repository. Changing this will rename the repository
+  name: permission
+
+  # A short description of the repository that will show up on GitHub
+  description: WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.
+
+  # A URL with more information about the repository
+  homepage: https://github.com/miklb/permission
+
+  # Either `true` to make the repository private, or `false` to make it public.
+  private: false
+
+  # Either `true` to enable issues for this repository, `false` to disable them.
+  has_issues: true
+
+  # Either `true` to enable the wiki for this repository, `false` to disable it.
+  has_wiki: false
+
+  # Either `true` to enable downloads for this repository, `false` to disable them.
+  has_downloads: true
+
+  # Updates the default branch for this repository.
+  default_branch: develop
+
+  # Either `true` to allow squash-merging pull requests, or `false` to prevent
+  # squash-merging.
+  allow_squash_merge: true
+
+  # Either `true` to allow merging pull requests with a merge commit, or `false`
+  # to prevent merging pull requests with merge commits.
+  allow_merge_commit: true
+
+  # Either `true` to allow rebase-merging pull requests, or `false` to prevent
+  # rebase-merging.
+  allow_rebase_merge: true
+
+# Labels: define labels for Issues and Pull Requests
+labels:
+  - name: bug
+    color: EE3F46
+  - name: docs
+    color: FFC274
+  - name: feature
+    color: 91CA55
+  - name: chore
+    color: FEF2C0
+  - name: duplicate
+    color: D2DAE1
+  - name: help wanted
+    color: FBCA04
+  - name: invalid
+    color: D2DAE1
+  - name: question
+    color: CC317C
+  - name: refactor
+    color: FAD8C7
+  - name: style
+    color: FFC274
+  - name: wontfix
+    color: D2DAE1

@@ -11,7 +11,7 @@
     "browser-sync": "^2.18.13",
     "cssnext": "^1.8.4",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "precss": "^2.0.0"
   }
 }

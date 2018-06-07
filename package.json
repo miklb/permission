@@ -7,7 +7,7 @@
   "author": "Michael Bishop <miklb@miklb.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
+    "autoprefixer": "^8.6.0",
     "browser-sync": "^2.24.4",
     "cssnext": "^1.8.4",
     "gulp": "^3.9.1",

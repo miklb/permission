@@ -10,9 +10,8 @@
     "autoprefixer": "^9.5.0",
     "browser-sync": "^2.24.5",
     "cssnext": "^1.8.4",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.1",
     "gulp-postcss": "^7.0.1",
     "precss": "^4.0.0"
-
   }
 }

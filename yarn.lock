@@ -296,17 +296,17 @@ autoprefixer@^9.3.1:
     postcss "^7.0.5"
     postcss-value-parser "^3.3.1"
 
-autoprefixer@^9.6.0:
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.6.0.tgz#0111c6bde2ad20c6f17995a33fad7cf6854b4c87"
+autoprefixer@^9.6.1:
+  version "9.6.1"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.6.1.tgz#51967a02d2d2300bb01866c1611ec8348d355a47"
   dependencies:
-    browserslist "^4.6.1"
-    caniuse-lite "^1.0.30000971"
+    browserslist "^4.6.3"
+    caniuse-lite "^1.0.30000980"
     chalk "^2.4.2"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^7.0.16"
-    postcss-value-parser "^3.3.1"
+    postcss "^7.0.17"
+    postcss-value-parser "^4.0.0"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -535,12 +535,12 @@ browserslist@^4.3.3, browserslist@^4.3.4:
     electron-to-chromium "^1.3.82"
     node-releases "^1.0.1"
 
-browserslist@^4.6.1:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.6.2.tgz#574c665950915c2ac73a4594b8537a9eba26203f"
+browserslist@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.6.3.tgz#0530cbc6ab0c1f3fc8c819c72377ba55cf647f05"
   dependencies:
-    caniuse-lite "^1.0.30000974"
-    electron-to-chromium "^1.3.150"
+    caniuse-lite "^1.0.30000975"
+    electron-to-chromium "^1.3.164"
     node-releases "^1.1.23"
 
 browserslist@~0.4.0:
@@ -612,9 +612,9 @@ caniuse-lite@^1.0.30000898, caniuse-lite@^1.0.30000899, caniuse-lite@^1.0.300009
   version "1.0.30000910"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000910.tgz#755d5181d4b006e5a2b59b1ffa05d0a0470039f5"
 
-caniuse-lite@^1.0.30000971, caniuse-lite@^1.0.30000974:
-  version "1.0.30000974"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000974.tgz#b7afe14ee004e97ce6dc73e3f878290a12928ad8"
+caniuse-lite@^1.0.30000975, caniuse-lite@^1.0.30000980:
+  version "1.0.30000980"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000980.tgz#0df53e4354b3111f83ac15b0bd4c71fe92994231"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1209,9 +1209,9 @@ electron-to-chromium@^1.2.7:
   version "1.3.28"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.28.tgz#8dd4e6458086644e9f9f0a1cf32e2a1f9dffd9ee"
 
-electron-to-chromium@^1.3.150:
-  version "1.3.154"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.154.tgz#e5b73beecd4db9f024d807ba1faad93fe1fb98aa"
+electron-to-chromium@^1.3.164:
+  version "1.3.188"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.188.tgz#e28e1afe4bb229989e280bfd3b395c7ec03c8b7a"
 
 electron-to-chromium@^1.3.82:
   version "1.3.84"
@@ -3835,6 +3835,10 @@ postcss-value-parser@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
 
+postcss-value-parser@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.0.0.tgz#99a983d365f7b2ad8d0f9b8c3094926eab4b936d"
+
 postcss-values-parser@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/postcss-values-parser/-/postcss-values-parser-2.0.0.tgz#1ba42cae31367c44f96721cb5eb99462bfb39705"
@@ -3882,7 +3886,7 @@ postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.6:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.16:
+postcss@^7.0.17:
   version "7.0.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.17.tgz#4da1bdff5322d4a0acaab4d87f3e782436bad31f"
   dependencies:

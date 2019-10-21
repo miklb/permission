@@ -1,3 +1,0 @@
-[submodule "inc/plugin-installer"]
-	path = inc/plugin-installer
-	url = https://github.com/dcooney/wordpress-plugin-installer

@@ -1,3 +1,5 @@
+[![TODO board](https://imdone.io/api/1.0/projects/5a14ab859f0f9378aa6b74fb/badge)](https://imdone.io/app#/board/miklb/permission)
+
 # Permission
 
 WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.

@@ -1,6 +1,4 @@
-[![TODO board](https://imdone.io/api/1.0/projects/5a14ab859f0f9378aa6b74fb/badge)](https://imdone.io/app#/board/miklb/permission)
-
-# permission
+# Permission
 
 WordPress theme with IndieWeb support baked in. You have permission to free your content from silos.
 
@@ -13,7 +11,6 @@ Specifically, support out-of-the-box for the primary IndieWeb WordPress plugins:
 * [semantic-linkbacks](https://wordpress.org/plugins/semantic-linkbacks/)
 * [post-kinds](https://wordpress.org/plugins/indieweb-post-kinds/)
 * [syndication links](https://wordpress.org/plugins/syndication-links/)
-* webmention-comments
 
 ## FAQ
 Will you support *Y*? Maybe. As long as it furthers the goal of having an easy to get up and running WordPress theme using IndieWeb principles.
